@@ -19,6 +19,14 @@ cube.rotation.set(1,2,1)
 scene.add(cube)
 
 
+const geometry2 = new THREE.CylinderGeometry(1, 1, 2)
+const material2 = new THREE.MeshBasicMaterial({
+  color: 0xffff11
+})
+
+const cylinder2 = new THREE.Mesh(geometry2, material2)
+scene.add(cylinder2)
+
 
 
 function animate(){
